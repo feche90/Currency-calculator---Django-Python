@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EUR Rates</title>
+</head>
+<body>
+
+    
+     <!-- Navigation bar -->
+
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/"> <img src="{% static 'main/images/Monkey_logo.png' %}" width="63" height="47" alt="Image not found"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="/usd">USD</a>
+                <a class="nav-item nav-link" href="/euro">EUR</a>
+                <a class="nav-item nav-link" href="/jpy">JPY</a>
+                <a class="nav-item nav-link" href="/cop">COP</a>
+              </div>
+            </div>
+          </nav>
+
+
+
+          <div class="container">
+                <h1>Todays official exchange rates for 1 EUR are: </h1>
+                <br>
+            
+                      <!-- Table 1 -->
+                      
+            
+                          <div class="col">
+                              <div class="table-responsive">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th scope="col"></th>
+                                  <th scope="col">Currency</th>
+                                  <th scope="col">Rate</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                
+                                <tr>
+                                  <th scope="row"><img src="{% static 'main/images/USA.png' %}" width="32" height="32" alt=""></th>
+                                  <td>USD</td>
+                                  <td>{{USD}}</td>
+                                </tr>
+                                <tr>
+                                        <th scope="row"> <img src="{% static 'main/images/JAPAN.png' %}" width="32" height="32" alt="Image not found"></th>
+                                        <td>JPY</td>
+                                        <td>{{JPY}}</td>
+                                      </tr>
+                                <tr>
+                                  <th scope="row"><img src="{% static 'main/images/UK.png' %}" width="32" height="32" alt="Image not found"></th>
+                                  <td>GBP</td>
+                                  <td>{{GBP}}</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"><img src="{% static 'main/images/CHINA.png' %}" width="32" height="32" alt="Image not found"></th>
+                                  <td>CNY</td>
+                                  <td>{{CNY}}</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"><img src="{% static 'main/images/KOREA.png' %}" width="32" height="32" alt="Image not found"></th>
+                                  <td>KRW</td>
+                                  <td>{{KRW}}</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"><img src="{% static 'main/images/HONG_KONG.png' %}" width="32" height="32" alt="Image not found"></th>
+                                  <td>HKD</td>
+                                  <td>{{HKD}}</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"><img src="{% static 'main/images/TAIWAN.png' %}" width="32" height="32" alt="Image not found"></th>
+                                  <td>TWD</td>
+                                  <td>{{TWD}}</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"><img src="{% static 'main/images/CANADA.png' %}" width="32" height="32" alt="Image not found"></th>
+                                  <td>CAD</td>
+                                  <td>{{CAD}}</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"><img src="{% static 'main/images/SWITZERLAND.png' %}" width="32" height="32" alt="Image not found"></th>
+                                  <td>CHF</td>
+                                  <td>{{CHF}}</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row"><img src="{% static 'main/images/AUSTRALIA.png' %}" width="32" height="32" alt="Image not found"></th>
+                                  <td>AUD</td>
+                                  <td>{{AUD}}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                        
+            
+                        <!-- Table 2 -->
+                <div class="col">
+                    <div class="table-responsive">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Currency</th>
+                      <th scope="col">Rate</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"> <img src="{% static 'main/images/NEW_ZELAND.png' %}" width="32" height="32" alt="Image not found"></th>
+                      <td>NZD</td>
+                      <td>{{NZD}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="{% static 'main/images/THAILAND.png' %}" width="32" height="32" alt=""></th>
+                      <td>THB</td>
+                      <td>{{THB}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="{% static 'main/images/SINGAPORE.png' %}" width="32" height="32" alt="Image not found"></th>
+                      <td>SGD</td>
+                      <td>{{SGD}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="{% static 'main/images/PHILIPPINES.png' %}" width="32" height="32" alt="Image not found"></th>
+                      <td>PHP</td>
+                      <td>{{PHP}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="{% static 'main/images/INDONESIA.png' %}" width="32" height="32" alt="Image not found"></th>
+                      <td>IDR</td>
+                      <td>{{IDR}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="{% static 'main/images/VIETNAM.png' %}" width="32" height="32" alt="Image not found"></th>
+                      <td>VND</td>
+                      <td>{{VND}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="{% static 'main/images/MALASYA.png' %}" width="32" height="32" alt="Image not found"></th>
+                      <td>MYR</td>
+                      <td>{{MYR}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="{% static 'main/images/DENMARK.png' %}" width="32" height="32" alt="Image not found"></th>
+                      <td>DKK</td>
+                      <td>{{DKK}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="{% static 'main/images/SAUDI_ARABIA.png' %}" width="32" height="32" alt="Image not found"></th>
+                      <td>SAR</td>
+                      <td>{{SAR}}</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img src="{% static 'main/images/COLOMBIA.png' %}" width="32" height="32" alt="Image not found"></th>
+                      <td>COP</td>
+                      <td>{{COP}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+        </div>
+            
+            
+        <div class="bottom">
+            <p style="text-align:center; color:grey" >Copyright © 2019 Federico Gutierrez, All rights reserved.</p>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>
